@@ -1,1 +1,59 @@
-yarn add react react-dom gatsby
+# yarn add react react-dom gatsby
+
+mkdir -p src/pages
+touch src/pages/index.js
+
+# yarn add gatsby-theme-blog
+
+<!-- # yarn add @joshkennedy00/gatsby-theme-blog-remix -->
+<!-- # yarn remove @joshkennedy00/gatsby-theme-blog-remix -->
+
+touch gatsby-config.js
+echo []
+
+mkdir -p content/{posts,assets}
+
+mv src/pages/index.js src/pages/\_index.js
+
+!!!
+TypeError: null is not an object (evaluating 'data.site')
+
+mv src/pages/\_index.js src/pages/index.js
+
+!!!
+(EnsureResources, ) TypeError: undefined is not an object (evaluating 'locationAndPageResources.pageResources.page')
+
+#LINKS:
+
+## https://dev.to/hagnerd/using-your-first-gatsby-theme-hep
+
+## https://dev.to/ekafyi/using-and-customizing-multiple-official-gatsby-themes-from-scratch-without-starter-sites-2441
+
+=========================================
+package.json
+====
+{
+"name": "first-gatsby-theme",
+"version": "1.0.0",
+"license": "MIT",
+"dependencies": {
+"react": "...",
+"react-dom": "...",
+"gatsby": "...",
+},
+"scripts": {
+"build": "gatsby build",
+"start": "gatsby develop",
+"clean": "gatsby clean"
+}
+}
+=========================================
+yarn start
+
+=========================================
+.gitignore
+===
+node_modules
+.cache
+public
+=========================================
