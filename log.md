@@ -28,6 +28,17 @@ date: "2019-08-18"
 
 # Changing the base URL of our blog
 
+basePath: "/blog"
+mv src/pages/\_index.js src/pages/index.js
+
+===
+yarn add gatsby-plugin-styled-components styled-components babel-plugin-styled-components
+
+# yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp gatsby-source-filesystem
+
+yarn remove gatsby-theme-blog
+yarn add gatsby-plugin-react-helmet react-helmet
+
 - - - - - - - - - +
                   #LINKS:
 
