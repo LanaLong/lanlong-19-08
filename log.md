@@ -19,11 +19,17 @@ mv src/pages/index.js src/pages/\_index.js
 TypeError: null is not an object (evaluating 'data.site')
 
 mv src/pages/\_index.js src/pages/index.js
-
+121§
 !!!
 (EnsureResources, ) TypeError: undefined is not an object (evaluating 'locationAndPageResources.pageResources.page')
+===
+date: "2019-08-18"
+===
 
-#LINKS:
+# Changing the base URL of our blog
+
+- - - - - - - - - +
+                  #LINKS:
 
 ## https://dev.to/hagnerd/using-your-first-gatsby-theme-hep
 
